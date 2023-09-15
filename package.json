@@ -1,6 +1,6 @@
 {
-  "name": "power-canvas",
-  "displayName": "Power canvas",
+  "name": "power-canvas-for-notion",
+  "displayName": "Power canvas for Notion",
   "version": "0.0.1",
   "description": "Power Canvas for Notion web app",
   "author": "Wesley G. Obi",
@@ -10,6 +10,8 @@
     "test": "plasmo test"
   },
   "dependencies": {
+    "@plasmohq/messaging": "^0.5.0",
+    "@plasmohq/storage": "^1.8.0",
     "plasmo": "0.83.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
@@ -26,6 +28,13 @@
   "manifest": {
     "host_permissions": [
       "https://*/*"
+    ],
+    "permissions": [
+      "activeTab",
+      "tabs",
+      "scripting",
+      "storage",
+      "windows"
     ]
   }
 }
